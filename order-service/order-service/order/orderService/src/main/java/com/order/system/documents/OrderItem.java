@@ -1,6 +1,4 @@
-package com.order.system.model;
-
-import javax.persistence.Entity;
+package com.order.system.documents;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -9,7 +7,6 @@ import org.springframework.data.mongodb.core.mapping.Field;
 import lombok.Data;
 
 @Data
-@Entity
 @Document(collection = "order_Item")
 public class OrderItem {
 	

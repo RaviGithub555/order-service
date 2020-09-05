@@ -10,8 +10,9 @@ import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.data.repository.support.PageableExecutionUtils;
 import org.springframework.stereotype.Repository;
-import com.order.system.model.Order;
-import com.order.system.model.OrderItem;
+
+import com.order.system.documents.Order;
+import com.order.system.documents.OrderItem;
 
 
 @Repository

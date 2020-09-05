@@ -1,18 +1,13 @@
-package com.order.system.model;
+package com.order.system.bean;
 
 import java.util.Date;
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Field;
-import net.sf.json.JSONObject;
 
-public class CreateOrder {
+public class OrderBean {
 	
 	  private String customerName;
-	  
 	  private String customerId;
-	  
+	  private String address;
 	  private Date orderDate;
-	  
 	  private OrderItemBean orderItem;
 
 
@@ -46,6 +41,14 @@ public class CreateOrder {
 
 	public void setOrderItem(OrderItemBean orderItem) {
 		this.orderItem = orderItem;
+	}
+
+	public String getAddress() {
+		return address;
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
 	}
 
 }
